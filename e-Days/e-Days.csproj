@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>e_Days</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\e-Days.DataLayer\e-Days.DataLayer.csproj" />
+    <ProjectReference Include="..\e-Days.Domain\e-Days.Domain.csproj" />
+  </ItemGroup>
+
+
+</Project>
