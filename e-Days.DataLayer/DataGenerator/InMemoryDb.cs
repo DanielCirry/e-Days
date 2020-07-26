@@ -23,37 +23,44 @@ namespace e_Days.DataLayer.DataGenerator
                     new MessageOfTheDay
                     {
                         Day = "monday",
-                        Message = "First day of the week!"
+                        Message = "First day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     },
                     new MessageOfTheDay
                     {
                         Day = "tuesday",
-                        Message = "Second day of the week!"
+                        Message = "Second day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     },
                     new MessageOfTheDay
                     {
                         Day = "wednesday",
-                        Message = "Third day of the week!"
+                        Message = "Third day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     },
                     new MessageOfTheDay
                     {
                         Day = "thursday",
-                        Message = "Fourth day of the week!"
+                        Message = "Fourth day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     },
                     new MessageOfTheDay
                     {
                         Day = "friday",
-                        Message = "Fifth day of the week!"
+                        Message = "Fifth day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     },
                     new MessageOfTheDay
                     {
                         Day = "saturday",
-                        Message = "Sixth day of the week!"
+                        Message = "Sixth day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     },
                     new MessageOfTheDay
                     {
                         Day = "sunday",
-                        Message = "Seventh day of the week!"
+                        Message = "Seventh day of the week!",
+                        ImageUri = "https://picsum.photos/300/500"
                     });
 
                 context.SaveChanges();
