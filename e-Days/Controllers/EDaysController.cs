@@ -18,27 +18,19 @@ namespace e_Days.Controllers
 
         [HttpGet("days/{day}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetMessageOfTheDayByDay(string day)
         {
             if (string.IsNullOrEmpty(day))
-                return BadRequest();
+                return NotFound();
 
             var model = await _service.GetMessageByDay(day);
 
             if (model == null || model.Message == "")
-                return BadRequest();
+                return NotFound();
 
             return Ok(model);
-        }
-
-        // GET api/<EDaysController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
         }
     }
 }
